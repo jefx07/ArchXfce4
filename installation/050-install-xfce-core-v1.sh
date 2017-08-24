@@ -2,8 +2,8 @@
 set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
-# Author 	: 	Erik Dubois
-# Website 	: 	http://www.erikdubois.be
+# Author    :   Erik Dubois
+# Website   :   http://www.erikdubois.be
 ##################################################################################################################
 ##################################################################################################################
 #
@@ -13,7 +13,7 @@ set -e
 
 
 echo "################################################################"
-echo "xfce4"   
+echo "xfce4"
 echo "################################################################"
 
 
@@ -38,10 +38,13 @@ fi
 
 
 echo "################################################################"
-echo "xfce4-goodies"   
+echo "xfce4-goodies"
 echo "################################################################"
 
-sudo pacman -S --needed xfce4-clipman-plugin xfce4-notifyd xfce4-screenshooter xfce4-taskmanager xfce4-whiskermenu-plugin thunar-archive-plugin
+sudo pacman -S --noconfirm --needed mousepad thunar-archive-plugin thunar-media-tags-plugin xfburn xfce4-artwork xfce4-clipman-plugin xfce4-datetime-plugin xfce4-mpc-plugin xfce4-netload-plugin xfce4-notifyd xfce4-pulseaudio-plugin xfce4-screenshooter xfce4-sensors-plugin xfce4-time-out-plugin xfce4-taskmanager xfce4-whiskermenu-plugin
+
+
+
 
 echo "################################################################"
 echo "lightdm"
@@ -60,7 +63,7 @@ if pacman -Qi $package &> /dev/null; then
 
 else
 
-    sudo pacman -S --needed lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+    sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 
 fi
 
