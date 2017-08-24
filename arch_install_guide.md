@@ -41,7 +41,7 @@ Mount the file system on the root partion to `/mnt`, for example
 ```
 
 
-### Installation
+## Installation
 
 #### Select the mirrors
 
@@ -187,7 +187,7 @@ Install grub:
 ```
 
 
-### Reboot
+## Reboot
 
 Exit the chroot environment by typing `exit`.
 
@@ -196,11 +196,11 @@ Optionally manually unmount all the partitions with `umount -R /mnt`: this allow
 Finally, restart the machine by typing `reboot`: any partitions still mounted will be automatically unmounted by *systemd*. Remember to remove the installation media and then login into the new system with the root account.
 
 
-## Add regular user
+## Create user account
 
 Login with root
 
-Create a user account
+Add user:
 
 ```
 # useradd -m -g users -G wheel,storage,power -s /bin/bash jeff
