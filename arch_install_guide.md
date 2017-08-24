@@ -1,12 +1,4 @@
----
-layout: post
-title: "Arch Install"
-date: "2017-08-24 13:37:59"
-description: Notes for installing Arch Linux
-tags: linux
----
-
-### Pre-installation
+## Pre-installation
 
 #### Connect to the internet
 
@@ -65,7 +57,7 @@ Use the *pacstrap* script to install the `base` package group:
 # pacstrap /mnt base base-devel
 ```
 
-### Configure the system
+## Configure the system
 
 #### Fstab
 
@@ -204,7 +196,7 @@ Optionally manually unmount all the partitions with `umount -R /mnt`: this allow
 Finally, restart the machine by typing `reboot`: any partitions still mounted will be automatically unmounted by *systemd*. Remember to remove the installation media and then login into the new system with the root account.
 
 
-## Phase 2
+## Add regular user
 
 Login with root
 
@@ -231,7 +223,7 @@ Look for these lines with an hashtag in front
 ```
 
 
-## Phase 3
+## Install desktop environment
 
 Login with new user account
 
@@ -251,6 +243,6 @@ We will download the scripts for an easy and quick installation.
 
 ```
 $ sudo pacman -S git
-$ git clone https://github.com/erikdubois/archxfce4
+$ git clone https://github.com/jefx07/archxfce4
 ```
 
