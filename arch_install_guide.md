@@ -236,7 +236,7 @@ $ sudo pacman -Syu
 Installing bash-completion is helpful:
 
 ```
-# pacman -S bash-completion
+$ sudo pacman -S bash-completion
 ```
 
 We will download the scripts for an easy and quick installation.

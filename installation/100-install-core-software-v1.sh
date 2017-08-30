@@ -17,8 +17,8 @@ sudo pacman -S --noconfirm --needed cantarell-fonts catfish conky curl dconf-edi
 sudo pacman -S --noconfirm --needed dmidecode dosfstools evince
 sudo pacman -S --noconfirm --needed galculator gksu gnome-keyring gnome-disk-utility gnome-themes-standard
 sudo pacman -S --noconfirm --needed gparted gtk-engine-murrine gvfs
-sudo pacman -S --noconfirm --needed hardinfo hddtemp htop lm_sensors lsb-release mlocate ntfs-3g
-sudo pacman -S --noconfirm --needed polkit-gnome screenfetch scrot
+sudo pacman -S --noconfirm --needed hardinfo hddtemp htop lsb-release mlocate ntfs-3g
+sudo pacman -S --noconfirm --needed polkit-gnome screenfetch scrot ttf-liberation
 sudo pacman -S --noconfirm --needed wget xdg-user-dirs xf86-input-synaptics youtube-dl
 xdg-user-dirs-update
 sudo updatedb
